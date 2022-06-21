@@ -29,8 +29,8 @@ function App() {
               {/* on 'users' route, display List component */}
               <Route index element={<List />} />
               {/* 
-              on users/userId route show Single component --&
-              on users/new route show New component 
+              on hangouts/hangId route show Single component --&
+              on hangouts/new route show New component 
               */}
               <Route path=":hangId" element={<Single />} />
               <Route path="new" element={<New />} />

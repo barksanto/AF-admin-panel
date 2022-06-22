@@ -39,11 +39,17 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## About Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This is a boilerplate so far for the AnyFans Admin Panel built in React. Currently no access to API or DB.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Using React Router DOM for page rendering. React Router DOM is an npm package that enables us to implement dynamic routing in a web app. It allows us to display pages and allow users to navigate them. It is a fully-featured client and server-side routing library for React. React Router Dom is used to build single-page applications i.e. applications that have many pages or components but the page is never refreshed instead the content is dynamically fetched based on the URL. This process is called Routing and it is made possible with the help of React Router Dom.
+
+Fetch Calls will be made within the respective components when they're rendered with useEffect.
+
+With useEffect we will store relevant data in State for the respective component.
+
+Need to determine how to fetch respective lists since List components will serve more than one list. So depending on what page is being visited, there will be a different GET request.
 
 ### Code Splitting
 

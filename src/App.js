@@ -14,6 +14,7 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
+            
             <Route path="users">
               {/* on 'users' route, display List component */}
               <Route index element={<List />} />

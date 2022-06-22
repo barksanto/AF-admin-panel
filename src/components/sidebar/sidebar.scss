@@ -1,4 +1,11 @@
 .sidebar{
   background-color: lightcoral;
   flex: 1;
+
+  .top{ // only child is the logo
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

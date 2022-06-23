@@ -25,8 +25,33 @@
     }
 
     .link{
+      width: max-content;
       font-size: 12px;
       border-bottom: 1px solid #000;
+    }
+
+    .percentage{
+      display: flex;
+      align-items: center;
+      font-style: 14px;
+
+
+      &.positive{
+        color: green;
+      }
+
+            &.negative {
+              color: red;
+            }
+    }
+
+    .icon{
+      font-size: 18px;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: rgb(223, 0, 230);
+      color: white;
+      align-self: flex-end;
     }
   }
 

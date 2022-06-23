@@ -18,7 +18,15 @@ const Widget = ({ type }) => {
         title: "USERS",
         isMoney: false,
         link: "See all users",
-        icon: <PeopleIcon className="icon" />,
+        icon: (
+          <PeopleIcon
+            className="icon"
+            style={{
+              color: "crimson",
+              backgroundColor: "white",
+            }}
+          />
+        ),
       }
       break
     case "order":
@@ -26,7 +34,15 @@ const Widget = ({ type }) => {
         title: "ORDERS",
         isMoney: false,
         link: "View all orders",
-        icon: <ShoppingCartIcon className="icon" />,
+        icon: (
+          <ShoppingCartIcon
+            className="icon"
+            style={{
+              color: "crimson",
+              backgroundColor: "white",
+            }}
+          />
+        ),
       }
       break
     case "earnings":
@@ -34,7 +50,15 @@ const Widget = ({ type }) => {
         title: "EARNINGS",
         isMoney: true,
         link: "View earnings",
-        icon: <MonetizationOnIcon className="icon" />,
+        icon: (
+          <MonetizationOnIcon
+            className="icon"
+            style={{
+              color: "crimson",
+              backgroundColor: "white",
+            }}
+          />
+        ),
       }
       break
     case "balance":
@@ -42,13 +66,21 @@ const Widget = ({ type }) => {
         title: "BALANCE",
         isMoney: true,
         link: "See details",
-        icon: <AccountBalanceIcon className="icon" />,
+        icon: (
+          <AccountBalanceIcon
+            className="icon"
+            style={{
+              color: "crimson",
+              backgroundColor: "white",
+            }}
+          />
+        ),
       }
       break
     default:
       break
   }
-  console.log(data.title)
+  
   return (
     <div className="widget">
       <div className="left">
